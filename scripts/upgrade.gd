@@ -1,6 +1,6 @@
 extends Node2D
 
-var costs = [5, 8, 12, 15, 18]
+var costs = [4, 8, 12, 16, 20]
 var costIndex = 0
 var costFormat = "$%s"
 var costLabel
