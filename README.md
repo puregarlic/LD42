@@ -13,6 +13,12 @@ Ships with 100% genuine cat physics.
 
 Created for Ludum Dare 42.
 
+## Download
+
+To score a copy of Catsitter for Windows, macOS, or Linux, head on over to our [Itch page](https://puregarlic.itch.io/catsitter).
+
+There, you'll even find a one-of-a-kind Catsitter wallpaper!
+
 ## Controls
 
 - Mouse: Drag and drop cats from your dresser to the ever-growing pile on your bed.
