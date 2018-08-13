@@ -19,7 +19,7 @@ signal scoring
 signal finished
 
 func _ready():
-	pitch = randf() * 2
+	pitch = (randf() + 1.5) / 2
 	var enter = get_node("Sounds/Enter")
 	pickup = get_node("Sounds/Pickup")
 	meow = get_node("Sounds/Meow")
