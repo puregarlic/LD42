@@ -1,6 +1,9 @@
+
 # Catsitter
 
 > Sit cats like a professional
+
+![Title](screenshots/Title.png)
 
 ## Premise
 
@@ -12,11 +15,18 @@ Created for Ludum Dare 42.
 
 ## Controls
 
-Mouse: Drag and drop cats from your dresser to the ever-growing pile on your bed.
-Escape: Go back to the main menu to view your high score.
+- Mouse: Drag and drop cats from your dresser to the ever-growing pile on your bed.
+- Escape: Go back to the main menu to view your high score.
 
 ## Tooling
 
 - Programmed in **Godot Engine**
 - Sounds created in **Sunvox**
 - Art created with **Aseprite** and **Photoshop**
+
+## Screenshots
+
+![Screen 1](screenshots/Screen1.png)
+![Screen 2](screenshots/Screen2.png)
+![Screen 3](screenshots/Screen3.png)
+![Credits](screenshots/Credits.png)
