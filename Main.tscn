@@ -21,7 +21,7 @@ d = 0.0
 custom_solver_bias = 0.0
 extents = Vector2( 13.7347, 2.99127 )
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Z Index" ]
 

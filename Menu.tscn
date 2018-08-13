@@ -105,7 +105,7 @@ group = null
 text = "Credits"
 flat = true
 align = 1
-_sections_unfolded = [ "Material", "Theme", "Visibility", "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "Material", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
 
 [node name="High Score" type="Label" parent="." index="4"]
 
@@ -113,7 +113,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 559.0
+margin_left = 509.0
 margin_top = 60.0
 margin_right = 1209.0
 margin_bottom = 110.0
@@ -125,12 +125,13 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
+custom_constants/shadow_as_outline = 7
 text = "High Score: $0"
 align = 2
 valign = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Grow Direction", "custom_fonts" ]
+_sections_unfolded = [ "Focus", "Grow Direction", "Hint", "Mouse", "Rect", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
 
 
