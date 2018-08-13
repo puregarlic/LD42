@@ -1,5 +1,5 @@
 
-# Catsitter
+# CATSITTER
 
 > Sit cats like a professional
 
