@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sounds/sfx/Meow1.wav" type="AudioStream" id=1]
+[ext_resource path="res://sounds/sfx/Meow2.wav" type="AudioStream" id=2]
+[ext_resource path="res://sounds/sfx/Meow3.wav" type="AudioStream" id=3]
+[ext_resource path="res://sounds/sfx/Meow4.wav" type="AudioStream" id=4]
+
+[node name="Audio" type="Node2D"]
+
+[node name="Enter" type="AudioStreamPlayer2D" parent="." index="0"]
+
+stream = ExtResource( 1 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Pickup" type="AudioStreamPlayer2D" parent="." index="1"]
+
+stream = ExtResource( 2 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Meow" type="AudioStreamPlayer2D" parent="." index="2"]
+
+stream = ExtResource( 3 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Loss" type="AudioStreamPlayer2D" parent="." index="3"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+

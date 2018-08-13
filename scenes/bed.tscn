@@ -1,0 +1,104 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/bed.gd" type="Script" id=1]
+[ext_resource path="res://sprites/beds/bed1.png" type="Texture" id=2]
+[ext_resource path="res://sprites/beds/bed2.png" type="Texture" id=3]
+[ext_resource path="res://sprites/beds/bed3.png" type="Texture" id=4]
+[ext_resource path="res://sprites/beds/bed4.png" type="Texture" id=5]
+[ext_resource path="res://sprites/beds/bed5.png" type="Texture" id=6]
+
+[node name="Bed" type="StaticBody2D"]
+
+editor/display_folded = true
+position = Vector2( 0, 3 )
+input_pickable = false
+collision_layer = 2
+collision_mask = 8
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Pickable" ]
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 3.0
+one_shot = true
+autostart = false
+
+[node name="Bed 1" type="CollisionPolygon2D" parent="." index="1"]
+
+editor/display_folded = true
+build_mode = 0
+polygon = PoolVector2Array( 466.655, 583.389, 719.955, 583.325, 720.009, 570.043, 733.293, 570.004, 733.337, 556.653, 786.613, 556.709, 786.603, 569.94, 799.974, 570.004, 799.99, 530.005, 813.293, 529.973, 813.28, 516.727, 826.583, 516.696, 826.558, 716.647, 799.983, 716.584, 799.964, 676.763, 786.63, 676.637, 786.592, 663.435, 773.32, 663.277, 773.263, 650.112, 506.644, 649.917, 506.575, 663.346, 493.24, 663.283, 493.234, 676.592, 479.855, 676.687, 479.874, 716.704, 453.343, 716.635, 453.299, 596.672, 466.665, 596.736 )
+
+[node name="Sprite" type="Sprite" parent="Bed 1" index="0"]
+
+position = Vector2( 640, 610 )
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Bed 2" type="CollisionPolygon2D" parent="." index="2"]
+
+editor/display_folded = true
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 853.315, 570.061, 853.326, 530.028, 866.617, 530, 866.667, 516.682, 879.875, 516.737, 879.947, 716.614, 853.337, 716.669, 853.31, 676.697, 839.964, 676.642, 839.975, 663.412, 826.634, 663.268, 826.651, 650.016, 453.335, 650.032, 453.335, 663.323, 439.961, 663.323, 439.999, 676.675, 426.67, 676.669, 426.642, 716.702, 399.989, 716.658, 400, 596.747, 413.274, 596.742, 413.313, 583.396, 773.272, 583.324, 773.343, 570, 786.607, 570, 786.667, 556.731, 839.953, 556.67, 839.914, 569.89 )
+disabled = true
+
+[node name="Sprite2" type="Sprite" parent="Bed 2" index="0"]
+
+position = Vector2( 640, 610 )
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Bed 3" type="CollisionPolygon2D" parent="." index="3"]
+
+editor/display_folded = true
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 826.741, 583.525, 826.812, 570.085, 840.038, 570.085, 840.109, 556.789, 893.081, 556.646, 893.224, 569.971, 906.449, 570.114, 906.661, 529.988, 919.965, 529.974, 919.976, 516.662, 933.278, 516.651, 933.239, 716.65, 906.672, 716.65, 906.601, 676.666, 893.318, 676.595, 893.318, 663.383, 879.936, 663.263, 879.837, 649.965, 400.012, 649.979, 399.906, 663.298, 386.693, 663.369, 386.651, 676.588, 373.332, 676.701, 373.304, 716.679, 346.674, 716.686, 346.667, 596.691, 359.95, 596.726, 360.042, 583.294 )
+disabled = true
+
+[node name="Sprite3" type="Sprite" parent="Bed 3" index="0"]
+
+position = Vector2( 640, 609.99 )
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Bed 4" type="CollisionPolygon2D" parent="." index="4"]
+
+editor/display_folded = true
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 880.011, 583.319, 879.996, 569.98, 893.299, 569.994, 893.317, 556.67, 946.626, 556.673, 946.633, 569.958, 959.972, 570.012, 960, 530.017, 973.31, 530.01, 973.318, 516.675, 986.617, 516.689, 986.653, 716.67, 959.975, 716.681, 959.986, 676.675, 946.654, 676.622, 946.658, 663.347, 933.305, 663.326, 933.308, 649.984, 346.665, 649.984, 346.622, 663.312, 333.33, 663.33, 333.291, 676.643, 319.945, 676.658, 320.02, 716.702, 293.339, 716.624, 293.325, 596.657, 306.624, 596.654, 306.678, 583.379 )
+disabled = true
+
+[node name="Sprite3" type="Sprite" parent="Bed 4" index="0"]
+
+position = Vector2( 640, 610 )
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Bed 5" type="CollisionPolygon2D" parent="." index="5"]
+
+editor/display_folded = true
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 933.31, 583.341, 933.318, 570.009, 946.631, 569.973, 946.639, 556.652, 999.95, 556.672, 999.968, 569.963, 1013.3, 569.973, 1013.31, 529.974, 1026.63, 529.994, 1026.64, 516.661, 1039.95, 516.657, 1039.97, 716.67, 1013.3, 716.656, 1013.31, 676.691, 999.972, 676.659, 999.974, 663.315, 986.626, 663.295, 986.64, 649.997, 293.311, 649.999, 293.319, 663.277, 279.969, 663.287, 279.979, 676.659, 266.653, 676.663, 266.649, 716.67, 239.988, 716.652, 240.004, 596.657, 253.304, 596.629, 253.336, 583.325 )
+disabled = true
+
+[node name="Sprite3" type="Sprite" parent="Bed 5" index="0"]
+
+position = Vector2( 640, 610 )
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+

@@ -1,0 +1,142 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/credits.gd" type="Script" id=1]
+[ext_resource path="res://sprites/LD42 Cat Collage Title Screen.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Press_Start_2P/Press Start 2P.tres" type="DynamicFont" id=3]
+
+[node name="Credits" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 13.333, 13.333 )
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Programming" type="Label" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 379.0
+margin_top = 386.0
+margin_right = 979.0
+margin_bottom = 436.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Programming:"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Art" type="Label" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 377.0
+margin_top = 548.0
+margin_right = 977.0
+margin_bottom = 651.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Art & Sound:"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Graham Barber" type="Label" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 555.0
+margin_top = 452.0
+margin_right = 1205.0
+margin_bottom = 502.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "PureGarlic"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Dylan Shumway" type="Label" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 555.0
+margin_top = 611.0
+margin_right = 1205.0
+margin_bottom = 661.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "AkimboScreens"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Back" type="ToolButton" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 888.0
+margin_top = 66.0
+margin_right = 1200.0
+margin_bottom = 124.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0.545098, 0.545098, 1 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "< Back"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+
